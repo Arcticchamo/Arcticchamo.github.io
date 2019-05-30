@@ -1,68 +1,142 @@
 <!DOCTYPE html>
 <html>
-  <head>
+  <head> 
+ 
+    <style> 
+.seperate {
+	border:1px solid #92484C; 
+	margin:10px;
+} 
+
+.bgColor {
+  background:#B89783;
+}
+
+.headerColor {
+  background:#92484C;
+}
+
+body{
+  margin:0px;
+}
+
+.headerText{
+  color:white;
+  font-family:verdana,Helvetica,sans-serif;
+  font-weight:bold;
+  font-size:20pt;
+}
+
+.headerSubText{
+  color:white;
+  font-family:arial,helvetica,sans-serif;
+  font-size:15pt;
+  padding:10px;
+}
+
+.indexTitle{
+  position:relative;
+  left:-30px;
+  padding-bottom:5px;
+  font-size:22px;
+  font-family:verdana,Helvetica,sans-serif;
+  text-align:left;
+}
+
+.indexContent{
+  margin:auto;
+  width:300px;
+  padding-bottom:25px;
+  text-align:left;
+  font-size:15px;
+  font-family:arial,helvetica,sans-serif;
+}
+
+.sectionTitle{
+  font-size:22px;
+  font-weight:bold;
+  font-family:verdana,Helvetica,sans-serif;
+}
+
+.sectionContent{
+  
+}
+
+    </style>
+  
     <title>Connor Fletcher - Portfolio</title>
   </head>
-  <body bgcolor="#F3F3F3">
+  
+  <body class="bgColor">
     <!--Start of Banner-->
-  <div style="background:#E9E9E9;overflow:auto">
-    <div style="float:right">
-      <div style="float:right">
-      <img src="images/download.jpg" style="float:right" />
-    </div>
-    <div style="float:right;font-size:15pt;padding:10px;text-align:right;">
-      <span style="font-weight:bold;font-size:20pt;text-align:right">Contact Details </span>
-      <br />connor.college@hotmail.co.uk
-      <br />07592498734
-    </div>
+  <div class="headerColor" style="overflow:auto">
+    <div>
+      <div>
+        <img src="images/download.jpg" style="float:right" />
+      </div>
+      <div class="headerSubText" style="float:right;text-align:right">
+        <span class="headerText" style="text-align:right">Contact Details </span>
+        <br />connor.college@hotmail.co.uk
+        <br />07592498734
+      </div>
     </div>
   </div>
   <!--End of Banner-->
+
+  <div style="height:15px"></div>
   
   <!--Start of Sub-Content-->
-  <div style="text-align:center">
+  <div>
     <!--Start of Engines-->
-    <div style="margin:auto;width:300px">
-      <h2 style="text-align:left">Engines</h2>
-      <a href="engine.html" style="font-size:15pt"><b>2D Engine</b></a>,
-      <a href="engine.html" style="font-size:15pt"><b>3D Engine</b></a>
+    <div class="indexContent">
+      <div class="indexTitle">Engines</div>
+      <a href="engine.html"><span style="white-space:nowrap">2D Engine</span></a>,
+      <a href="engine.html"><span style="white-space:nowrap">3D Engine</span></a>
     </div>
     <!--End of Engines-->
     
      <!--Start of C++-->
-    <div style="margin:auto;width:300px">
-      <h2 style="text-align:left">C++ Projects</h2>
-      <a href="engine.html" style="font-size:15pt"><b>Parallel Ray Tracer</b></a>,
-      <a href="engine.html" style="font-size:15pt"><b>A* Pathfinding</b></a>
+    <div class="indexContent">
+      <div class="indexTitle">C++ Projects</div>
+      <a href="engine.html"><span style="white-space:nowrap">Parallel Ray-Tracer</span></a>,
+      <a href="engine.html"><span style="white-space:nowrap">A* Pathfinding</span></a>
     </div>
     <!--End of C++-->
     
     <!--Start of Unity and C#-->
-    <div style="margin:auto;width:300px">
-      <h2 style="text-align:left">Unity/C#</h2>
-      <a href="engine.html" style="font-size:15pt"><b>Dissertation</b></a>,
-      <a href="engine.html" style="font-size:15pt"><b>Balloon Popper</b></a>,
-      <a href="engine.html" style="font-size:15pt"><b>Star Wars Trench Run</b></a>
+    <div class="indexContent">
+      <div class="indexTitle">Unity/C# Projects</div>
+      <a href="engine.html"><span style="white-space:nowrap">Dissertation</span></a>,
+      <a href="engine.html"><span style="white-space:nowrap">Balloon Popper</span></a>,
+      <a href="engine.html"><span style="white-space:nowrap">Star Wars Trench Run</span></a>
     </div>
     <!--End of Unity and C#-->
     
     <!--Start of Research-->
-    <div style="margin:auto;width:300px">
-      <h2 style="text-align:left">Research Papers</h2>
-      <a href="engine.html" style="font-size:15pt"><b>Paper</b></a>
+    <div class="indexContent">
+      <div class="indexTitle">Research Papers</div>
+      <a href="engine.html"><span style="white-space:nowrap">Paper</span></a>
     </div>
     <!--End of Research-->
     
     <!--Start of Contact-->
-    <div style="margin:auto;width:300px">
-      <h2 style="text-align:left">Contact</h2>
-      <a href="engine.html" style="font-size:15pt"><b>Github</b></a>,
-      <a href="engine.html" style="font-size:15pt"><b>LinkedIn</b></a>,
-      <a href="engine.html" style="font-size:15pt"><b>Work Email</b></a>,
-      <a href="engine.html" style="font-size:15pt"><b>Email</b></a>
+    <div class="indexContent">
+      <div class="indexTitle">Contact</div>
+      <a href="engine.html"><span style="white-space:nowrap">Github</span></a>,
+      <a href="engine.html"><span style="white-space:nowrap">LinkedIn</span></a>,
+      <a href="engine.html"><span style="white-space:nowrap">Work Email</span></a>,
+      <a href="engine.html"><span style="white-space:nowrap">Email</span></a>,
+      <a href="engine.html"><span style="white-space:nowrap">CV</span></a>
     </div>
     <!--End of Contact-->
     
+	<!--Start of Engines Information-->
+	<div class="seperate"></div>
+	  <span class="sectionTitle">Engines</span>
+	<div class="seperate"></div>
+	<!--End of Engines Information-->
+
+	
   </div>
   <!--End of Sub-Content-->
   </body>
