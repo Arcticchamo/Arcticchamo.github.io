@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head> 
- 
     <style> 
 .seperate {
 	border:1px solid #92484C; 
@@ -9,11 +8,12 @@
 } 
 
 .bgColor {
-  background:#F5F5F5;
+  background:#FFFFFF;
 }
 
 .headerColor {
-  background:#E1E1E1;
+  background-image:url("images/BannerImage.png");
+  background-size:100% 100%;
 }
 
 body{
@@ -59,8 +59,29 @@ body{
   text-align:center;
 }
 
-.sectionContent{
+.sectionBlocks{
+  margin:auto;
+  width:60em;
+}
+
+.sectionTextContent{
   font-family:arial,helvetica,sans-serif;
+  text-align:left;
+  width:49%;
+  float:left;
+  background-color:red;
+}
+
+.sectionImageContent{
+  float:right;
+  width:49%;
+  height:100%;
+  background-color:green;
+}
+
+table{
+  border: 1px solid red;
+  padding-top: 10px;
 }
 
     </style>
@@ -70,87 +91,117 @@ body{
   
   <body class="bgColor">
     <!--Start of Banner-->
-  <div class="headerColor" style="overflow:auto">
-    <div>
+    <div class="headerColor" style="overflow:auto">
       <div>
-        <img src="images/download.jpg" style="float:right" />
+        <div>
+          <img src="images/download.jpg" style="float:right" />
+        </div>
+        <div class="headerSubText" style="float:right;text-align:right">
+          <span class="headerText" style="text-align:right">Contact Details </span>
+          <br />connor.college@hotmail.co.uk
+          <br />07592498734
+        </div>
       </div>
-      <div class="headerSubText" style="float:right;text-align:right">
-        <span class="headerText" style="text-align:right">Contact Details </span>
-        <br />connor.college@hotmail.co.uk
-        <br />07592498734
+    </div>
+    <!--End of Banner-->
+    
+    <div style="height:15px"></div>
+    
+    <!--Start of Index-->
+    <div>
+      <!--Start of Engines-->
+      <div class="indexContent">
+        <div class="indexTitle">Engines</div>
+        <a href="engine.html"><span style="white-space:nowrap">2D Engine</span></a>,
+        <a href="engine.html"><span style="white-space:nowrap">3D Engine</span></a>
       </div>
+      <!--End of Engines-->
+      
+       <!--Start of C++-->
+      <div class="indexContent">
+        <div class="indexTitle">C++ Projects</div>
+        <a href="engine.html"><span style="white-space:nowrap">Parallel Ray-Tracer</span></a>,
+        <a href="engine.html"><span style="white-space:nowrap">A* Pathfinding</span></a>
+      </div>
+      <!--End of C++-->
+      
+      <!--Start of Unity and C#-->
+      <div class="indexContent">
+        <div class="indexTitle">Unity/C# Projects</div>
+        <a href="engine.html"><span style="white-space:nowrap">Dissertation</span></a>,
+        <a href="engine.html"><span style="white-space:nowrap">Balloon Popper</span></a>,
+        <a href="engine.html"><span style="white-space:nowrap">Star Wars Trench Run</span></a>
+      </div>
+      <!--End of Unity and C#-->
+      
+      <!--Start of Research-->
+      <div class="indexContent">
+        <div class="indexTitle">Research Papers</div>
+        <a href="engine.html"><span style="white-space:nowrap">Paper</span></a>
+      </div>
+      <!--End of Research-->
+      
+      <!--Start of Contact-->
+      <div class="indexContent">
+        <div class="indexTitle">Contact</div>
+        <a href="engine.html"><span style="white-space:nowrap">Github</span></a>,
+        <a href="engine.html"><span style="white-space:nowrap">LinkedIn</span></a>,
+        <a href="engine.html"><span style="white-space:nowrap">Work Email</span></a>,
+        <a href="engine.html"><span style="white-space:nowrap">Email</span></a>,
+        <a href="engine.html"><span style="white-space:nowrap">CV</span></a>
+      </div>
+      <!--End of Contact-->
     </div>
-  </div>
-  <!--End of Banner-->
-
-  <div style="height:15px"></div>
-  
-  <!--Start of Sub-Content-->
-  <div>
-    <!--Start of Engines-->
-    <div class="indexContent">
-      <div class="indexTitle">Engines</div>
-      <a href="engine.html"><span style="white-space:nowrap">2D Engine</span></a>,
-      <a href="engine.html"><span style="white-space:nowrap">3D Engine</span></a>
-    </div>
-    <!--End of Engines-->
-    
-     <!--Start of C++-->
-    <div class="indexContent">
-      <div class="indexTitle">C++ Projects</div>
-      <a href="engine.html"><span style="white-space:nowrap">Parallel Ray-Tracer</span></a>,
-      <a href="engine.html"><span style="white-space:nowrap">A* Pathfinding</span></a>
-    </div>
-    <!--End of C++-->
-    
-    <!--Start of Unity and C#-->
-    <div class="indexContent">
-      <div class="indexTitle">Unity/C# Projects</div>
-      <a href="engine.html"><span style="white-space:nowrap">Dissertation</span></a>,
-      <a href="engine.html"><span style="white-space:nowrap">Balloon Popper</span></a>,
-      <a href="engine.html"><span style="white-space:nowrap">Star Wars Trench Run</span></a>
-    </div>
-    <!--End of Unity and C#-->
-    
-    <!--Start of Research-->
-    <div class="indexContent">
-      <div class="indexTitle">Research Papers</div>
-      <a href="engine.html"><span style="white-space:nowrap">Paper</span></a>
-    </div>
-    <!--End of Research-->
-    
-    <!--Start of Contact-->
-    <div class="indexContent">
-      <div class="indexTitle">Contact</div>
-      <a href="engine.html"><span style="white-space:nowrap">Github</span></a>,
-      <a href="engine.html"><span style="white-space:nowrap">LinkedIn</span></a>,
-      <a href="engine.html"><span style="white-space:nowrap">Work Email</span></a>,
-      <a href="engine.html"><span style="white-space:nowrap">Email</span></a>,
-      <a href="engine.html"><span style="white-space:nowrap">CV</span></a>
-    </div>
-    <!--End of Contact-->
-    
-	<!--Start of Engines Information-->
-	<div class="seperate"></div>
-	  <div class="sectionTitle">Engines</div>
-	<div class="seperate"></div>
+    <!--End of Index-->
 	
-	<div style="text-align:center;max-width:400px;max-height:300px">
-	  THIS IS SOME EXAMPLE TEXT
-	  THIS IS SOME EXAMPLE TEXT
-	  THIS IS SOME EXAMPLE TEXT
-	  THIS IS SOME EXAMPLE TEXT
-	  THIS IS SOME EXAMPLE TEXT
-
+	<!--Start of Engines Section Title-->
+	<div>
+      <div class="seperate"></div>
+      <div class="sectionTitle">Engines</div>
+      <div class="seperate"></div>
 	</div>
-	<!--End of Engines Information-->
-
+	<!--End of Engines Section Title-->
 	
-  </div>
-  <!--End of Sub-Content-->
+	<!--Start of Engines Information-->
+    <div class="sectionBlocks">
+	  <div class="sectionTextContent">
+	    <b>2D Engine:</b>
+	    <a>
+		THIS IS SOME EXAMPLE TEXT
+	    THIS IS SOME EXAMPLE TEXT
+	    THIS IS SOME EXAMPLE TEXT
+	    THIS IS SOME EXAMPLE TEXT
+	    THIS IS SOME EXAMPLE TEXT
+		THIS IS SOME EXAMPLE TEXT
+	    THIS IS SOME EXAMPLE TEXT
+	    THIS IS SOME EXAMPLE TEXT
+	    THIS IS SOME EXAMPLE TEXT
+	    THIS IS SOME EXAMPLE TEXT
+		THIS IS SOME EXAMPLE TEXT
+	    THIS IS SOME EXAMPLE TEXT
+	    THIS IS SOME EXAMPLE TEXT
+	    THIS IS SOME EXAMPLE TEXT
+	    THIS IS SOME EXAMPLE TEXT
+		THIS IS SOME EXAMPLE TEXT
+	    THIS IS SOME EXAMPLE TEXT
+	    THIS IS SOME EXAMPLE TEXT
+	    THIS IS SOME EXAMPLE TEXT
+	    THIS IS SOME EXAMPLE TEXT
+		</a>
+      </div>
+	  <div class="sectionImageContent">
+	    <table style="width:100%;height:100%">
+			  <tr>
+			    <td><img src="images/download.jpg" style="height:50px;width:auto"/></td>
+			    <td><img src="images/download.jpg" style="height:50px;width:auto"/></td>
+			  </tr>
+		</table>
+	  </div>
+    </div>
+	<!--End of Engines Information-->
+	  
+	
+	
+	<!--End of Engines Information-->
   </body>
 </html>
-
-
-<!--<img src="images/download.jpg" />-->
