@@ -77,9 +77,10 @@ body{
   height:100%;
 }
 
-table{
-  border: 1px solid red;
-  padding-top: 10px;
+.sectionSeperator{
+  border:1px solid #92484C;
+  margin:15px;
+  width:50%;
 }
 
     </style>
@@ -142,61 +143,240 @@ table{
       <!--Start of Contact-->
       <div class="indexContent">
         <div class="indexTitle">Contact</div>
-        <a href="engine.html"><span style="white-space:nowrap">Github</span></a>,
-        <a href="engine.html"><span style="white-space:nowrap">LinkedIn</span></a>,
+		<a href="engine.html"><span style="white-space:nowrap">CV</span></a>
         <a href="engine.html"><span style="white-space:nowrap">Work Email</span></a>,
         <a href="engine.html"><span style="white-space:nowrap">Email</span></a>,
-        <a href="engine.html"><span style="white-space:nowrap">CV</span></a>
+		<a href="engine.html"><span style="white-space:nowrap">Github</span></a>,
+        <a href="engine.html"><span style="white-space:nowrap">LinkedIn</span></a>,
       </div>
       <!--End of Contact-->
     </div>
     <!--End of Index-->
 	
-	<!--Start of Engines Section Title-->
-	<div>
+	<!--Start of Engines Section-->
+	<div> <!--Title-->
       <div class="seperate"></div>
       <div class="sectionTitle">Engines</div>
       <div class="seperate"></div>
 	</div>
-	<!--End of Engines Section Title-->
-	
-	<!--Start of Engines Information-->
-    <div class="sectionBlocks">
-	  <div class="sectionTextContent">
-	    <b>2D Engine:</b>
-	    <a>
-		THIS IS SOME EXAMPLE TEXT
-	    THIS IS SOME EXAMPLE TEXT
-	    THIS IS SOME EXAMPLE TEXT
-	    THIS IS SOME EXAMPLE TEXT
-	    THIS IS SOME EXAMPLE TEXT
-		THIS IS SOME EXAMPLE TEXT
-	    THIS IS SOME EXAMPLE TEXT
-	    THIS IS SOME EXAMPLE TEXT
-	    THIS IS SOME EXAMPLE TEXT
-	    THIS IS SOME EXAMPLE TEXT
-		THIS IS SOME EXAMPLE TEXT
-	    THIS IS SOME EXAMPLE TEXT
-	    THIS IS SOME EXAMPLE TEXT
-	    THIS IS SOME EXAMPLE TEXT
-	    THIS IS SOME EXAMPLE TEXT
-		THIS IS SOME EXAMPLE TEXT
-	    THIS IS SOME EXAMPLE TEXT
-	    THIS IS SOME EXAMPLE TEXT
-	    THIS IS SOME EXAMPLE TEXT
-	    THIS IS SOME EXAMPLE TEXT
-		</a>
+	<div> <!--Content-->
+      <div class="sectionBlocks" style="height:17em">
+	    <div class="sectionTextContent">
+	      <b style="font-size:20px">2D Engine:</b>
+	      <a>
+	  	  This engine is based on the Unity Engine. Utilising the
+	  	  Component Entity System (CES) to create specialised objects. 
+	  	  The engine's focus is to be diverse, staying away from 
+	  	  global static objects and creating a more inter-connected
+	  	  architecture. The main dependancies of the engine is OpenGL 4 Core
+	  	  and SDL 2.0.<br>
+	  	  In addition to the engine, a tool has been developed 
+	  	  to assist with the large background images usually used in 2D Games.
+	  	  The tool, named Map Compressor, is designed to take large PNG files
+	  	  and reduce their overall size. The reason for this is due to 2D games 
+	  	  relying heavily on image files for their sprites. Simple tools like 
+	  	  the Map Compressor help reduce some of the memory used.<br><br>
+		  <a href="https://github.com/Arcticchamo/2D-Game-Engine-with-Legend-of-Zelda-Game" style="font-weight:bold">Source</a><br>
+	  	</a>
+        </div>
+	    <div class="sectionImageContent">
+	      <img src="images/download.jpg" style="height:25ch;width:auto"/>
+          <img src="images/download.jpg" style="height:25ch;width:auto"/>
+	    </div>  
       </div>
-	  <div class="sectionImageContent">
-	    <img src="images/download.jpg" style="height:200px;width:auto"/>
-        <img src="images/download.jpg" style="height:200px;width:auto"/>
-	  </div>
 	  
-    </div>
-	<!--End of Engines Information-->
+	  <div style="width:100%;padding-right:25%;padding-left:25%"><div class="sectionSeperator"></div></div>
 	  
+	  <div class="sectionBlocks" style="height:16em">
+	    <div class="sectionTextContent">
+	      <b style="font-size:20px">3D Engine:</b>
+	      <a>
+	  	  This engine is based on the Unity Engine. Utilising the
+	  	  Component Entity System (CES) to create specialised objects. 
+	  	  The main dependancies of the engine is OpenGL 4 Core,
+	  	  SDL 2.0 and Bullet 3. The engine comprises of a custom
+	  	  built Input system and OBJ loader, physics/collisions
+	  	  and resource manager.<br>
+	  	  Attached to the engine is a simple car avoidance game 
+	  	  that allows the user to dodge on-coming obstacles.
+	  	  This was designed to showcase most of the features within
+	  	  the engine.<br><br>
+		  <a href="https://github.com/Arcticchamo/Arctic-Engine" style="font-weight:bold">Source</a><br>
+	  	</a>
+        </div>
+	    <div class="sectionImageContent">
+	      <img src="images/download.jpg" style="height:25ch;width:auto"/>
+          <img src="images/download.jpg" style="height:25ch;width:auto"/>
+	    </div>  
+      </div>
+	</div>
+	<!--End of Engines Section-->
+
+    <!--Start of C++ Projects Section-->
+    <div> <!--Title-->
+      <div class="seperate"></div>
+      <div class="sectionTitle">C++ Projects</div>
+      <div class="seperate"></div>
+	</div>
+	<div> <!--Content-->
+      <div class="sectionBlocks" style="height:16em">
+	    <div class="sectionTextContent">
+	      <b style="font-size:20px">Parallel Ray-Tracer:</b>
+	      <a>
+	  	    This project was designed around 2D lighting and how
+			to replicate Ray-Tracing. The implementation creates circles
+			around the "world" and applies a specified colour. Light sources 
+			are placed within the scene. The program runs through each pixel
+			on the screne and calculates if the rays being fired collide
+			with a circle. It then uses the distance between the pixel and
+			the light sources to determine the shadowing/colour gradiant.<br>
+			In addition, OpenCL 1.2 is used to optimise the speed of compilation
+			and run time. By using micro-thread parrelisation, the performance
+            of the program improves rapidily.<br><br>
+			<a href="https://github.com/Arcticchamo/Parallel-Ray-Tracer" style="font-weight:bold">Source</a><br>
+	  	  </a>
+        </div>
+	    <div class="sectionImageContent">
+	      <img src="images/download.jpg" style="height:25ch;width:auto"/>
+          <img src="images/download.jpg" style="height:25ch;width:auto"/>
+	    </div>  
+      </div>
+	  
+	  <div style="width:100%;padding-right:25%;padding-left:25%"><div class="sectionSeperator"></div></div>
+	  
+	  <div class="sectionBlocks" style="height:14em">
+	    <div class="sectionTextContent">
+	      <b style="font-size:20px">A* Pathfinding:</b>
+	      <a>
+	  	    This A* program creates a grid of squares (nodes) which
+			represents a map within a game. The user then provides a start
+			and end point for the path. It calculates the most efficient
+			path using the A* Algorithm to the final square. The program 
+			uses SDL 2.0 pure for the window and visual elements of the 
+			software. The whole design of the program was to be dynamic. 
+			Allowing different sized grids and nodes to be used. This was 
+			so that the algorithm could react as if it were in a real 
+			engine/game.<br><br>
+		  <a href="https://github.com/Arcticchamo/Astar-Pathfinding" style="font-weight:bold">Source</a><br>
+	  	</a>
+        </div>
+	    <div class="sectionImageContent">
+	      <img src="images/download.jpg" style="height:25ch;width:auto"/>
+          <img src="images/download.jpg" style="height:25ch;width:auto"/>
+	    </div>  
+      </div>
+	</div>
+	<!--End of C++ Projects Section-->
 	
+	<!--Start of Unity/C# Projects Section-->
+    <div> <!--Title-->
+      <div class="seperate"></div>
+      <div class="sectionTitle">Unity/C# Projects</div>
+      <div class="seperate"></div>
+	</div>
+	<div> <!--Content-->
+      <div class="sectionBlocks" style="height:17em">
+	    <div class="sectionTextContent">
+	      <b style="font-size:20px">Dissertation:</b>
+	      <a>
+	  	    My Dissertation, titled "An examination of how artificial 
+			pets affect a player's emotion and influence behaviour 
+			within a game", was based on the research of AI animals 
+			within games, specifically companions. The focus of my
+			study was to learn how developers utilise animal companions
+			to create a virtual bond between the player and AI.<br>
+			With the study, I attempted to create a game where the 
+			users would spend time taking care of a virtual hamster. 
+			This would required feeding, watering, cleaning and 
+			interactions to keep the hamster happy. The AI itself 
+			built upon the PAD system to allow emotional changes
+			with the hamster.<br><br>
+			<a href="https://github.com/Arcticchamo/Dissertation-Project" style="font-weight:bold">Source</a><br>
+			<a href="papers/dissertation.pdf" style="font-weight:bold">Documentation</a>
+	  	  </a>
+        </div>
+	    <div class="sectionImageContent">
+	      <img src="images/download.jpg" style="height:25ch;width:auto"/>
+          <img src="images/download.jpg" style="height:25ch;width:auto"/>
+	    </div>  
+      </div>
+	  
+	  <div style="width:100%;padding-right:25%;padding-left:25%"><div class="sectionSeperator"></div></div>
+	  
+	  <div class="sectionBlocks" style="height:14em">
+	    <div class="sectionTextContent">
+	      <b style="font-size:20px">Balloon Popper:</b>
+	      <a>
+	  	    This Unity game was designed around patients 
+			struggling with "pinching" movements with their fingers.
+			A series of three games, one being Balloon Popper, were
+			designed and built with the idea of pinching objects to 
+			destroy them in some capacity.<br>
+			Balloon Popper is a simple game that has balloons
+			floating upwards. The goal is to pinch (burst) as
+			many balloons as possible in a set time limit. The
+			game is fully customisable, allowing the user to adjust
+			the speed, size and amount of balloons. <br><br>
+			<a href="https://github.com/Arcticchamo/Balloon-Popper" style="font-weight:bold">Source</a><br>
+	  	  </a>
+        </div>
+	    <div class="sectionImageContent">
+	      <img src="images/download.jpg" style="height:25ch;width:auto"/>
+          <img src="images/download.jpg" style="height:25ch;width:auto"/>
+	    </div>  
+      </div>
+	  
+	  <div style="width:100%;padding-right:25%;padding-left:25%"><div class="sectionSeperator"></div></div>
+	  
+	  <div class="sectionBlocks" style="height:16em">
+	    <div class="sectionTextContent">
+	      <b style="font-size:20px">Star Wars Trench Run:</b>
+	      <a>
+		    This simple Unity game is an endless top-down shooter
+		    where the player is a X-wing making the trench run.
+		    Waves of Tie-Fighters will spawn and shoot at the player. 
+		    The player can collect bombs which destroy all enemies on the
+		    screen. The objective is to destroy as many enemies as possible,
+		    collecting points for every kill.<br>
+		    The reason for making this game was to focus on optimisation. 
+		    I wanted the game to be usable on a mobile device, which meant 
+		    thinking about how the engine/game uses its limited resources. 
+		    Make sure that "instantiate" is rarely used and object pools
+		    are utilised meaning the game can run at a steadier pace.<br><br>
+		    <a href="https://github.com/Arcticchamo/StarWars-Trench-Run" style="font-weight:bold">Source</a><br>
+		  </a>
+        </div>
+	    <div class="sectionImageContent">
+	      <img src="images/download.jpg" style="height:25ch;width:auto"/>
+          <img src="images/download.jpg" style="height:25ch;width:auto"/>
+	    </div>  
+      </div>
+	</div>
+	<!--End of Unity/C# Projects Section-->
 	
-	<!--End of Engines Information-->
+	<!--Start of Research Papers Section-->
+    <div> <!--Title-->
+      <div class="seperate"></div>
+      <div class="sectionTitle">Research Papers</div>
+      <div class="seperate"></div>
+	</div>
+	<div> <!--Content-->
+      <div class="sectionBlocks" style="height:17em">
+	    <div class="sectionTextContent">
+	      <b style="font-size:20px">Ear Training:</b>
+	        <a>
+	  	      My Dissertation, titled "An examination of how artificial
+			  <br><br>
+			<a href="papers/Ear_Training_2019.pdf" style="font-weight:bold">Source</a><br>
+	  	  </a>
+        </div>
+	    <div class="sectionImageContent">
+	      <img src="images/download.jpg" style="height:25ch;width:auto"/>
+          <img src="images/download.jpg" style="height:25ch;width:auto"/>
+	    </div>  
+      </div>
+	</div>
+	<!--End of Research Papers Section-->
+	
   </body>
 </html>
