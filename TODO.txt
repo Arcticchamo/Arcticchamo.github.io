@@ -1,5 +1,5 @@
 Format LinkedIn 
-
+About me section at the top
 Make all images hrefs!
 
 Doxygen 2D Engine
