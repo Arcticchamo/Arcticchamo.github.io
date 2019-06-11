@@ -89,6 +89,14 @@ body{
   text-align:center;
 }
 
+a{
+  text-decoration:none;
+  color:blue;
+}
+a:hover {text-decoration:underline;}
+a:visited {color:blue;}
+
+
     </style>
   
     <title>Connor Fletcher - Portfolio</title>
@@ -107,7 +115,7 @@ body{
           <br />07592498734
         </div>
 		<div class="headerSubText" style="float:left;text-align:left;width:50%;height:auto">
-          <span class="headerText" style="text-align:left">About Me:<br></span>
+          <span class="headerText" style="text-align:left">About Me<br></span>
 		    I am a 23 year old, reliable, hardworking, friendly team player.
 			I build up my experience and knowledge by tackling every task given and
 			carrying them out to the best of my abilities.
@@ -176,7 +184,7 @@ body{
       <div class="sectionBlocks" style="height:17em">
 	    <div class="sectionTextContent" id="2dengine">
 	      <b style="font-size:20px">2D Engine:</b>
-	      <a>
+	      <span>
 	  	  This engine is based on the Unity Engine. Utilising the
 	  	  Component Entity System (CES) to create specialised objects. 
 	  	  The engine's focus is to be diverse, staying away from 
@@ -190,10 +198,10 @@ body{
 	  	  relying heavily on image files for their sprites. Simple tools like 
 	  	  the Map Compressor help reduce some of the memory used.<br><br>
 		  <a href="https://github.com/Arcticchamo/2D-Game-Engine-with-Legend-of-Zelda-Game" style="font-weight:bold">Source</a><br>
-	  	</a>
+	  	</span>
         </div>
 	    <div class="sectionImageContent">
-	      <img src="images/2D_Engine_1.png" style="height:25ch;width:auto"/>
+	      <a href="images/2D_Engine_2.png"><img src="images/2D_Engine_2.png" style="height:25ch;width:auto"/></a>
 	    </div>  
       </div>
 	  
@@ -202,7 +210,7 @@ body{
 	  <div class="sectionBlocks" style="height:16em">
 	    <div class="sectionTextContent" id="3dengine">
 	      <b style="font-size:20px">3D Engine:</b>
-	      <a>
+	      <span>
 	  	  This engine is based on the Unity Engine. Utilising the
 	  	  Component Entity System (CES) to create specialised objects. 
 	  	  The main dependancies of the engine is OpenGL 4 Core,
@@ -214,10 +222,10 @@ body{
 	  	  This was designed to showcase most of the features within
 	  	  the engine.<br><br>
 		  <a href="https://github.com/Arcticchamo/Arctic-Engine" style="font-weight:bold">Source</a><br>
-	  	</a>
+	  	</span>
         </div>
 	    <div class="sectionImageContent">
-	      <img src="images/3D_Engine_1.png" style="height:25ch;width:auto"/>
+	      <a href="images/3D_Engine_1.png"><img src="images/3D_Engine_1.png" style="height:25ch;width:auto"/></a>
 	    </div>  
       </div>
 	</div>
@@ -233,7 +241,7 @@ body{
       <div class="sectionBlocks" style="height:16em">
 	    <div class="sectionTextContent" id="raycaster">
 	      <b style="font-size:20px">Parallel Ray-Caster:</b>
-	      <a>
+	      <span>
 	  	    This project was designed around 2D lighting and how
 			to replicate Ray-Caster. The implementation creates circles
 			around the "world" and applies a specified colour. Light sources 
@@ -245,10 +253,10 @@ body{
 			and run time. By using micro-thread parrelisation, the performance
             of the program improves rapidily.<br><br>
 			<a href="https://github.com/Arcticchamo/Parallel-Ray-Caster" style="font-weight:bold">Source</a><br>
-	  	  </a>
+	  	  </span>
         </div>
 	    <div class="sectionImageContent">
-	      <img src="images/Parallel_Ray_Caster_1.png" style="height:25ch;width:auto"/>
+	      <a href="images/Parallel_Ray_Caster_1.png"><img src="images/Parallel_Ray_Caster_1.png" style="height:25ch;width:auto"/></a>
 	    </div>  
       </div>
 	  
@@ -257,7 +265,7 @@ body{
 	  <div class="sectionBlocks" style="height:14em">
 	    <div class="sectionTextContent" id="a*pathfinding">
 	      <b style="font-size:20px">A* Pathfinding:</b>
-	      <a>
+	      <span>
 	  	    This A* program creates a grid of squares (nodes) which
 			represents a map within a game. The user then provides a start
 			and end point for the path. It calculates the most efficient
@@ -268,11 +276,11 @@ body{
 			so that the algorithm could react as if it were in a real 
 			engine/game.<br><br>
 		  <a href="https://github.com/Arcticchamo/Astar-Pathfinding" style="font-weight:bold">Source</a><br>
-	  	</a>
+	  	</span>
         </div>
 	    <div class="sectionImageContent">
-	      <a href="images/PathFinding_1.PNG"><img src="images/PathFinding_1.PNG" style="height:20ch;width:auto"/></a>
-          <img src="images/PathFinding_2.PNG" style="height:20ch;width:auto"/>
+	      <a href="images/PathFinding_1.png"><img src="images/PathFinding_1.png" style="height:20ch;width:auto"/></a>
+          <a href="images/PathFinding_2.png"><img src="images/PathFinding_2.png" style="height:20ch;width:auto"/></a>
 	    </div>  
       </div>
 	</div>
@@ -288,7 +296,7 @@ body{
       <div class="sectionBlocks" style="height:17em">
 	    <div class="sectionTextContent" id="dissertation">
 	      <b style="font-size:20px">Dissertation:</b>
-	      <a>
+	      <span>
 	  	    My Dissertation, titled "An examination of how artificial 
 			pets affect a player's emotion and influence behaviour 
 			within a game", was based on the research of AI animals 
@@ -303,11 +311,11 @@ body{
 			with the hamster.<br><br>
 			<a href="https://github.com/Arcticchamo/Dissertation-Project" style="font-weight:bold">Source</a>&ensp;
 			<a href="papers/Dissertation.pdf" style="font-weight:bold">Documentation</a>
-	  	  </a>
+	  	  </span>
         </div>
 	    <div class="sectionImageContent">
-	      <img src="images/Dissertation_1.PNG" style="height:19ch;width:auto"/>
-          <img src="images/Dissertation_2.PNG" style="height:19ch;width:auto"/>
+	      <a href="images/Dissertation_1.png"><img src="images/Dissertation_1.png" style="height:19ch;width:auto"/></a>
+          <a href="images/Dissertation_2.png"><img src="images/Dissertation_2.png" style="height:19ch;width:auto"/></a>
 	    </div>  
       </div>
 	  
@@ -316,7 +324,7 @@ body{
 	  <div class="sectionBlocks" style="height:14em">
 	    <div class="sectionTextContent" id="balloon">
 	      <b style="font-size:20px">Balloon Popper:</b>
-	      <a>
+	      <span>
 	  	    This Unity game was designed around patients 
 			struggling with "pinching" movements with their fingers.
 			A series of three games, one being Balloon Popper, were
@@ -328,10 +336,10 @@ body{
 			game is fully customisable, allowing the user to adjust
 			the speed, size and amount of balloons. <br><br>
 			<a href="https://github.com/Arcticchamo/Balloon-Popper" style="font-weight:bold">Source</a><br>
-	  	  </a>
+	  	  </span>
         </div>
 	    <div class="sectionImageContent" style="align:center">
-          <img src="images/Balloon_Popper_2.PNG" style="height:25ch;width:auto"/>
+          <a href="images/Balloon_Popper_2.png"><img src="images/Balloon_Popper_2.png" style="height:25ch;width:auto"/></a>
 	    </div>  
       </div>
 	  
@@ -340,7 +348,7 @@ body{
 	  <div class="sectionBlocks" style="height:16em">
 	    <div class="sectionTextContent" id="starwars">
 	      <b style="font-size:20px">Star Wars Trench Run:</b>
-	      <a>
+	      <span>
 		    This simple Unity game is an endless top-down shooter
 		    where the player is a X-wing making the trench run.
 		    Waves of Tie-Fighters will spawn and shoot at the player. 
@@ -353,10 +361,10 @@ body{
 		    Make sure that "instantiate" is rarely used and object pools
 		    are utilised meaning the game can run at a steadier pace.<br><br>
 		    <a href="https://github.com/Arcticchamo/StarWars-Trench-Run" style="font-weight:bold">Source</a><br>
-		  </a>
+		  </span>
         </div>
 	    <div class="sectionImageContent">
-	      <img src="images/Star_Wars_Trench_Run_1.PNG" style="height:25ch;width:auto"/>
+	      <a href="images/Star_Wars_Trench_Run_1.png"><img src="images/Star_Wars_Trench_Run_1.png" style="height:25ch;width:auto"/></a>
 	    </div>  
       </div>
 	</div>
@@ -372,7 +380,7 @@ body{
       <div class="sectionBlocks" style="height:17em">
 	    <div class="sectionTextContent" id="eartraining">
 	      <b style="font-size:20px">Ear Training:</b>
-	        <a>
+	        <span>
 	  	      This research project was based around musical training
 			  using the tones of musical notes using a VR environment.
 			  By using the built-in 3D audio panning within Unity 2017.4.5,
@@ -387,10 +395,10 @@ body{
 			  of training a VR environment compared to a standard, 2D window. 
 			  <br><br>
 			<a href="papers/Ear_Training_2019.pdf" style="font-weight:bold">Paper</a><br>
-	  	  </a>
+	  	  </span>
         </div>
 	    <div class="sectionImageContent">
-          <img src="images/Paper_2.PNG" style="height:25ch;width:auto"/>
+          <a href="images/Paper_2.png"><img src="images/Paper_2.png" style="height:25ch;width:auto"/></a>
 	    </div>  
       </div>
 	</div>
@@ -404,8 +412,8 @@ body{
 	</div>
 	<div class="contentsSection" style="padding-bottom:5em" id="contacts"><!--Contents-->
 	  <a href="contacts/CV.pdf">CV</a><br>
-	  <a>Email: <a href="mailto:cfletcher.programmer@hotmail.com">cfletcher.programmer@hotmail.com</a><br>
-	  <a>Work Email: <a href="mailto:cfletcher@bournemouth.ac.uk">cfletcher@bournemouth.ac.uk</a></a><br>
+	  Email: <a href="mailto:cfletcher.programmer@hotmail.com">cfletcher.programmer@hotmail.com</a><br>
+	  Work Email: <a href="mailto:cfletcher@bournemouth.ac.uk">cfletcher@bournemouth.ac.uk</a><br>
 	  <a href="https://github.com/Arcticchamo">Github</a><br>
 	  <a href="https://www.linkedin.com/in/connor-fletcher-948461107/">LinkedIn</a><br>
 	</div>
